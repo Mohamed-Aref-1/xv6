@@ -5,8 +5,8 @@
 int main(int argc, char* argv[])
 {
   if (argc != 2) {
-    fprintf(2, "Error, You Should Put Only One argument");
+    fprintf(2, "Error, You Should Put One and Only One argument\n");
   }
-  int time = atoi(argv[2]);
+  int time = atoi(argv[1]);
   sleep(time);
 }

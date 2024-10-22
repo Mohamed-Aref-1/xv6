@@ -69,11 +69,11 @@ DerivePointerAlignment: false
 PointerAlignment: Left  # 指针对齐到变量名右侧
 
 AlignAfterOpenBracket: Align  # 在括号之后对齐
-AlignConsecutiveAssignments: true  # 对齐连续的赋值
-AlignConsecutiveDeclarations: true  # 对齐连续的声明
+AlignConsecutiveAssignments: false  # 对齐连续的赋值
+AlignConsecutiveDeclarations: false  # 对齐连续的声明
 AlignEscapedNewlines: Left  # 转义换行符对齐
-AlignOperands: true  # 对齐操作数
-AlignTrailingComments: true  # 对齐尾部注释
+AlignOperands: false  # 对齐操作数
+AlignTrailingComments: false  # 对齐尾部注释
 
 BinPackArguments: false  # 参数不打包
 BinPackParameters: false  # 参数不打包

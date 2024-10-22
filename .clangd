@@ -1,3 +1,6 @@
-
-  Add: 
+CompileFlags:
+  Add:
     - -std=gnu89
+    - -w  # 禁用所有警告
+Diagnostics:
+  Suppress: ["unknown-type", "implicit-int"]
