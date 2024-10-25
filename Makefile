@@ -196,6 +196,10 @@ UPROGS=\
 	$U/_sleep\
 	$U/_pingpong\
 	$U/_test\
+	$U/_open\
+	$U/_find\
+	$U/_primes\
+	$U/_xargs\
 	$U/_zombie\
 
 
