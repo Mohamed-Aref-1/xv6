@@ -4,9 +4,22 @@
 
 int main(int argc, char* argv[])
 {
-  if (argc != 2) {
-    fprintf(2, "Error, You Should Put One and Only One argument\n");
-  }
-  int time = atoi(argv[1]);
-  sleep(time);
+    // Check if the correct number of arguments is provided
+    if (argc != 2) {
+        fprintf(2, "Error: You must provide exactly one argument for the sleep time.\n");
+        exit(1);  // Exit with an error code
+    }
+
+    // Convert the argument to an integer (sleep duration in seconds)
+    int time = atoi(argv[1]);
+    if (time < 0) {
+        fprintf(2, "Error: Time must be a non-negative integer.\n");
+        exit(1);
+    }
+
+    // Call sleep with the specified duration
+    sleep(time);
+    
+    // Exit successfully
+    exit(0);
 }
